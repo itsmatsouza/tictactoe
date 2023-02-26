@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+  <title>Jogo da Velha</title>
+</head>
+<body>
+  <form id="form">
+    <div>
+      <label for="player1">PLAYER 1 <span class="player1-who x"></span></label>
+      <input type="text" name="player1" id="player1" autocomplete="off" autofocus>
+    </div>
+    <div>
+      <label for="player2">PLAYER 2 <span class="player2-who circle"></span></label>
+      <input type="text" name="player2" id="player2" autocomplete="off">
+    </div>
+    <div>
+      <button type="submit" disabled>JOGAR</button>
+    </div>
+  </form>
+  <div class="main" data-board>
+    <div class="main-content" data-key></div>
+    <div class="main-content" data-key></div>
+    <div class="main-content" data-key></div>
+    <div class="main-content" data-key></div>
+    <div class="main-content" data-key></div>
+    <div class="main-content" data-key></div>
+    <div class="main-content" data-key></div>
+    <div class="main-content" data-key></div>
+    <div class="main-content" data-key></div>
+  </div>
+  <div class="winning-main" data-winning-main>
+    <p class="winning-text" data-winning-text></p>
+    <button class="winning-btn" data-restart-btn>REINICIAR</button>
+    <button class="winning-btn" data-restart-players-btn>MUDAR JOGADORES</button>
+  </div>
+</body>
+</html>
